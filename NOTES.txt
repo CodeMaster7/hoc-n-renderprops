@@ -1,0 +1,20 @@
+stateless functional component: Generally a presentational component but not always. No access to direct state or lifecycle methods. Generally follows the
+const ComponentName = (props, other data) => {
+  return (
+      <h1>Hello, World</h1>
+  )
+}
+
+OR 
+
+const ComponentName = (props, other data) => <h1>Hello, World</h1>
+
+THESE ARE THE SAME THING
+
+We would use a functional component because it is less code to render by the browser and we don't need state or lifecylce methods
+
+Higher Order Components: If you find yourself rebuilding a lot of logic or having your components share a lot of functionality you should look to use a Higher Order Component. It is NOT ACTUALLY A COMPONENT but a function that returns a new component.
+
+Render Props: Anything a Higher Order Component can do, a render prop can do. Generally easier to reason with. Is literally a prop called render on the Component but doesn't need to be called render
+
+PropTypes: A way to set a specific type (array, function, string, boolean etc.) on a components props. Only shows warning ind development mode
